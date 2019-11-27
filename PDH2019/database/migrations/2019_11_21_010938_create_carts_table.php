@@ -15,6 +15,14 @@ class CreateCartsTable extends Migration
     {
         Schema::create('carts', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->string('name', 200);
+            $table->string('featuredimg');
+            $table->smallInteger('quantity');
+            $table->decimal('price', 8, 2);
+            $table->decimal('subtotal', 8, 2);
+            $table->bigInteger('user_id');
+            $table->smallInteger('status');//0 Carrito abierto, 1 cerrado
+            $table->bigInteger('order_number');
             $table->timestamps();
         });
     }
