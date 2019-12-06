@@ -3,9 +3,9 @@
 
 @section('content')
 
-<section class="d-flex bd-highlight">
-    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner carouselProducto">
+<section class="d-flex">
+    {{-- <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carouselProducto">
             <div class="carousel-item active">
                 <img src="img/producto1.jpg" class="" alt="">
             </div>
@@ -24,10 +24,11 @@
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
         </a>
-    </div>
+    </div> --}}
+      <img src="/storage/product/{{$product->featuredimg}}" class="" alt="">
     <section class="d-felx producto">
-        <h2>Vaso Jarra Licuadora Philips Walita Hl 3252 Hl 3253</h2>
-        <h1> $560</h1>
+        <h2>{{$product->name}}</h2>
+        <h1> {{$product->price}}</h1>
         <br>
         <div class="container">
             <section class="row ">
@@ -46,9 +47,7 @@
         </div>
         <br>
         <br>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
-            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-            t aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>{{$product->description}}</p>
     </section>
 </section>
 

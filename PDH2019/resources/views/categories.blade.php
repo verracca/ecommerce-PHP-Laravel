@@ -4,7 +4,7 @@
   @forelse ($products as $product)
     <article>
       <img src="/storage/product/{{$product->featuredimg}}" alt="">
-      <h4 class="name">{{$product->name}}</h4>
+      <h4 class="name"><a href="/product/{{$product->id}}">{{$product->name}}</a></h4>
       <p class="description">{{$product->description}}</p>
       <p class="price">Precio: {{$product->price}}$</p>
     </article>
