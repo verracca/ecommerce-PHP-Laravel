@@ -45,19 +45,22 @@ a {
     font-weight: bold;
     background-color: white;
 }
-.botonuser{
-  padding: 0;
-  margin-bottom: 5px;
-  margin-left: 5px
+
+.botonuser {
+    padding: 0;
+    margin-bottom: 5px;
+    margin-left: 5px
 }
-.iconouser{
-  color: white;
-  font-size: 30px
+
+.iconouser {
+    color: white;
+    font-size: 30px
 }
-.carrito{
-  color: white;
-  font-size: 25px;
-  text-align: center;
+
+.carrito {
+    color: white;
+    font-size: 25px;
+    text-align: center;
 }
 
 /*Categorias*/
@@ -156,4 +159,17 @@ footer {
         width: 28%;
     }
 
+}
+
+/*Productos */
+
+section .producto {
+    margin-left: 150px;
+    margin-right: 20px;
+    margin-top: 50px;
+}
+
+div .carousel-inner {
+    margin-left: 100px;
+    margin-top: 50px;
 }
