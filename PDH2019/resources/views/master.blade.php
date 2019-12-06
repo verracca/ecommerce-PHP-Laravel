@@ -10,6 +10,8 @@
   <link href="https://fonts.googleapis.com/css?family=Cabin&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/a340b68414.js" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css?family=Liu+Jian+Mao+Cao&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+
 
   <link rel="stylesheet" href="./css/styles.css">
   <title>Service Nuñez</title>

@@ -69,6 +69,14 @@ a {
     margin-right: 50px;
 }
 
+.categories {
+    color: #F21d20;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    padding-top: 30px;
+
+}
+
 .linkscategorias a {
     width: 45%;
     margin-bottom: 2%;
@@ -169,7 +177,7 @@ section .producto {
     margin-top: 50px;
 }
 
-div .carouselProducto-inner {
+div .carouselProducto {
     margin-left: 100px;
     margin-top: 50px;
 }
