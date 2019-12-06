@@ -43,7 +43,7 @@
           <li class="nav-item d-sm-block d-lg-none">
             <a class="dropdown-item nav-link" href="{{ route('logout') }}">Cerrar sesión</a>
           </li>
-        
+
 
 
           <li class="nav-item d-sm-block d-lg-none">
