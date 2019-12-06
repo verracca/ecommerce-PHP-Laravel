@@ -13,7 +13,7 @@
 
   <link rel="stylesheet" href="./css/styles.css">
   <title>Service Nuñez</title>
-  <link rel="SHORTCUT ICON" href="images/logomini.jpg" type="image/x-icon">
+  <link rel="SHORTCUT ICON" href="img/logomini.jpg" type="image/x-icon">
 
 </head>
 
@@ -26,7 +26,7 @@
       </button>
 
       <a class="navbar-brand font-weight-normal text-white" href="#">
-        <img class="logo" src="images/logo.png" alt="logo">Service Nuñez</a>
+        <img class="logo" src="img/logo.png" alt="logo">Service Nuñez</a>
 
       <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
@@ -67,22 +67,22 @@
         <div class="btn-group text-decoration-none imagenesnav">
           <button id="btnGroupDrop1" type="button" class="btn btn-link text-decoration-none botonuser" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <i class="far fa-user-circle iconouser"></i>
-          <div class="dropdown-menu dropdown-menu-lg-right" aria-labelledby="btnGroupDrop1">
-            @guest
-            <a class="dropdown-item" data-toggle="modal" data-target="#exampleModalCenter" href="#">Iniciar sesión</a>
-            <a class="dropdown-item" data-toggle="modal" data-target="#exampleModalCenter2" href="#"> Registrarme </a>
-            @else
-            <form class="dropdown-item" id="logout-form" action="/logout" method="POST">
-              @csrf
-              <button class="dropdown-item" type="submit">Cerrar sesión</button>
-            </form>
-            <!-- <a class="dropdown-item" href="">Cerrar sesión</a> -->
-            @endguest
-          </div>
+            <div class="dropdown-menu dropdown-menu-lg-right" aria-labelledby="btnGroupDrop1">
+              @guest
+              <a class="dropdown-item" data-toggle="modal" data-target="#exampleModalCenter" href="#">Iniciar sesión</a>
+              <a class="dropdown-item" data-toggle="modal" data-target="#exampleModalCenter2" href="#"> Registrarme </a>
+              @else
+              <form class="dropdown-item" id="logout-form" action="/logout" method="POST">
+                @csrf
+                <button class="dropdown-item" type="submit">Cerrar sesión</button>
+              </form>
+              <!-- <a class="dropdown-item" href="">Cerrar sesión</a> -->
+              @endguest
+            </div>
         </div>
       </div>
       <span class="img">
-        <a href="" class="text-decoration-none d-block d-lg-none"><img src="images/busqueda.png" alt="Busqueda"></a>
+        <a href="" class="text-decoration-none d-block d-lg-none"><img src="img/busqueda.png" alt="Busqueda"></a>
       </span>
     </nav>
   </header>
