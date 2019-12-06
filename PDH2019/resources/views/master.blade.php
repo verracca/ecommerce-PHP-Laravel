@@ -13,9 +13,9 @@
   <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
 
 
-  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="/css/styles.css">
   <title>Service Nuñez</title>
-  <link rel="SHORTCUT ICON" href="img/logomini.jpg" type="image/x-icon">
+  <link rel="SHORTCUT ICON" href="/img/logomini.jpg" type="image/x-icon">
 
 </head>
 
@@ -28,7 +28,7 @@
       </button>
 
       <a class="navbar-brand font-weight-normal text-white" href="#">
-        <img class="logo" src="img/logo.png" alt="logo">Service Nuñez</a>
+        <img class="logo" src="/img/logo.png" alt="logo">Service Nuñez</a>
 
       <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
