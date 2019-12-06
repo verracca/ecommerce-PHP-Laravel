@@ -43,7 +43,7 @@
           <li class="nav-item d-sm-block d-lg-none">
             <a class="dropdown-item nav-link" href="{{ route('logout') }}">Cerrar sesión</a>
           </li>
-        
+
 
 
           <li class="nav-item d-sm-block d-lg-none">
@@ -67,22 +67,22 @@
         <div class="btn-group text-decoration-none imagenesnav">
           <button id="btnGroupDrop1" type="button" class="btn btn-link text-decoration-none botonuser" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <i class="far fa-user-circle iconouser"></i>
-          <div class="dropdown-menu dropdown-menu-lg-right" aria-labelledby="btnGroupDrop1">
-            @guest
-            <a class="dropdown-item" data-toggle="modal" data-target="#exampleModalCenter" href="#">Iniciar sesión</a>
-            <a class="dropdown-item" data-toggle="modal" data-target="#exampleModalCenter2" href="#"> Registrarme </a>
-            @else
-            <form class="dropdown-item" id="logout-form" action="/logout" method="POST">
-              @csrf
-              <button class="dropdown-item" type="submit">Cerrar sesión</button>
-            </form>
-            <!-- <a class="dropdown-item" href="">Cerrar sesión</a> -->
-            @endguest
-          </div>
+            <div class="dropdown-menu dropdown-menu-lg-right" aria-labelledby="btnGroupDrop1">
+              @guest
+              <a class="dropdown-item" data-toggle="modal" data-target="#exampleModalCenter" href="#">Iniciar sesión</a>
+              <a class="dropdown-item" data-toggle="modal" data-target="#exampleModalCenter2" href="#"> Registrarme </a>
+              @else
+              <form class="dropdown-item" id="logout-form" action="/logout" method="POST">
+                @csrf
+                <button class="dropdown-item" type="submit">Cerrar sesión</button>
+              </form>
+              <!-- <a class="dropdown-item" href="">Cerrar sesión</a> -->
+              @endguest
+            </div>
         </div>
       </div>
       <span class="img">
-        <a href="" class="text-decoration-none d-block d-lg-none"><img src="images/busqueda.png" alt="Busqueda"></a>
+        <a href="" class="text-decoration-none d-block d-lg-none"><img src="img/busqueda.png" alt="Busqueda"></a>
       </span>
     </nav>
   </header>
