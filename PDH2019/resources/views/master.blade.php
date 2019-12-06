@@ -43,10 +43,7 @@
           <li class="nav-item d-sm-block d-lg-none">
             <a class="dropdown-item nav-link" href="{{ route('logout') }}">Cerrar sesión</a>
           </li>
-          <li class="nav-item d-sm-block d-lg-none">
-            <img class="avatar" src="" alt="usuario">
-
-          </li>
+        
 
 
           <li class="nav-item d-sm-block d-lg-none">
@@ -66,10 +63,10 @@
         <button class="btn btn-sm btn-light my-2 my-sm-0 " type="submit">Buscar</button>
       </form>
       <div class="img d-none d-md-block">
-        <a href="" class="text-decoration-none imagenesnav"><img src="images/carrito.png" alt="Carrito"></a>
+        <a href="" class="text-decoration-none imagenesnav"><i class="fas fa-shopping-cart carrito"></i></a>
         <div class="btn-group text-decoration-none imagenesnav">
-          <button id="btnGroupDrop1" type="button" class="btn btn-link text-decoration-none" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <img class="imagenesnav d-lg-block d-md-none" src="images/user.png" alt="Usuario"></button>
+          <button id="btnGroupDrop1" type="button" class="btn btn-link text-decoration-none botonuser" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="far fa-user-circle iconouser"></i>
           <div class="dropdown-menu dropdown-menu-lg-right" aria-labelledby="btnGroupDrop1">
             @guest
             <a class="dropdown-item" data-toggle="modal" data-target="#exampleModalCenter" href="#">Iniciar sesión</a>
