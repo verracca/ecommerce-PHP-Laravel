@@ -45,6 +45,20 @@ a {
     font-weight: bold;
     background-color: white;
 }
+.botonuser{
+  padding: 0;
+  margin-bottom: 5px;
+  margin-left: 5px
+}
+.iconouser{
+  color: white;
+  font-size: 30px
+}
+.carrito{
+  color: white;
+  font-size: 25px;
+  text-align: center;
+}
 
 /*Categorias*/
 .categorias {
