@@ -5,7 +5,7 @@
 
 <section class="d-flex bd-highlight">
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-        <div class="carouselProducto-inner">
+        <div class="carousel-inner carouselProducto">
             <div class="carousel-item active">
                 <img src="img/producto1.jpg" class="" alt="">
             </div>

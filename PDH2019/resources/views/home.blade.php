@@ -26,7 +26,7 @@
         </a>
     </div>
 </section>
-<h1 class="text-center">CATEGORIAS</h1>
+<h1 class="text-center categories">Categorías</h1>
 <section class="categorias">
     <div class="d-flex flex-wrap justify-content-around linkscategorias">
         <a href="#"><img src="img/Categoria amarillo-05.png" alt="Heladeras" class="categoriasimg"></a>
