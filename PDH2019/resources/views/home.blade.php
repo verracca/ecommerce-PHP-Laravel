@@ -27,14 +27,14 @@
     </div>
 </section>
 <h1 class="text-center categories">Categorías</h1>
-<section class="categorias">
+<section id="categories" class="categorias">
     <div class="d-flex flex-wrap justify-content-around linkscategorias">
-        <a href="#"><img src="img/Categoria amarillo-05.png" alt="Heladeras" class="categoriasimg"></a>
-        <a href="#"><img src="img/Categoria amarillo-06.png" alt="Heladeras" class="categoriasimg"></a>
-        <a href="#"><img src="img/Categoria amarillo-07.png" alt="Heladeras" class="categoriasimg"></a>
-        <a href="#"><img src="img/Categoria amarillo-08.png" alt="Heladeras" class="categoriasimg"></a>
-        <a href="#"><img src="img/Categoria amarillo-09.png" alt="Heladeras" class="categoriasimg"></a>
-        <a href="#"><img src="img/Categoria amarillo-10.png" alt="Heladeras" class="categoriasimg"></a>
+        <a href="/categories/microondas"><img src="img/Categoria amarillo-05.png" alt="Microondas" class="categoriasimg"></a>
+        <a href="/categories/lavarropas"><img src="img/Categoria amarillo-06.png" alt="Lavarropas" class="categoriasimg"></a>
+        <a href="/categories/procesadoras"><img src="img/Categoria amarillo-07.png" alt="Procesadoras" class="categoriasimg"></a>
+        <a href="/categories/cafeteras"><img src="img/Categoria amarillo-08.png" alt="Cafeteras" class="categoriasimg"></a>
+        <a href="categories/aspiradoras"><img src="img/Categoria amarillo-09.png" alt="Aspiradoras" class="categoriasimg"></a>
+        <a href="/categories/licuadoras"><img src="img/Categoria amarillo-10.png" alt="Licuadoras" class="categoriasimg"></a>
 
     </div>
 

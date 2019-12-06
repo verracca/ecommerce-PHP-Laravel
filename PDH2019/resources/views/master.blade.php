@@ -36,7 +36,7 @@
             <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Categorias</a>
+            <a class="nav-link" href="#categories">Categorias</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Contacto</a>
@@ -71,18 +71,18 @@
           <button id="btnGroupDrop1" type="button" class="btn btn-link text-decoration-none botonuser" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <i class="far fa-user-circle iconouser"></i>
           </button>
-            <div class="dropdown-menu dropdown-menu-lg-right" aria-labelledby="btnGroupDrop1">
-              @guest
-              <a class="dropdown-item" data-toggle="modal" data-target="#exampleModalCenter" href="#">Iniciar sesión</a>
-              <a class="dropdown-item" data-toggle="modal" data-target="#exampleModalCenter2" href="#"> Registrarme </a>
-              @else
-              <form class="dropdown-item" id="logout-form" action="/logout" method="POST">
-                @csrf
-                <button class="dropdown-item" type="submit">Cerrar sesión</button>
-              </form>
-              <!-- <a class="dropdown-item" href="">Cerrar sesión</a> -->
-              @endguest
-            </div>
+          <div class="dropdown-menu dropdown-menu-lg-right" aria-labelledby="btnGroupDrop1">
+            @guest
+            <a class="dropdown-item" data-toggle="modal" data-target="#exampleModalCenter" href="#">Iniciar sesión</a>
+            <a class="dropdown-item" data-toggle="modal" data-target="#exampleModalCenter2" href="#"> Registrarme </a>
+            @else
+            <form class="dropdown-item" id="logout-form" action="/logout" method="POST">
+              @csrf
+              <button class="dropdown-item" type="submit">Cerrar sesión</button>
+            </form>
+            <!-- <a class="dropdown-item" href="">Cerrar sesión</a> -->
+            @endguest
+          </div>
         </div>
       </div>
       <span class="img">
@@ -134,42 +134,42 @@
               <div class="form-group  col-sm-6 col-md-12 col-lg-6 ">
                 <label for="inputName">Nombre</label>
                 <input type="text" class="form-control @error('firstName') is-invalid @enderror" id="inputName" placeholder="Nombre" name="firstName" value="{{ old('firstName') }}">
-                  @error('firstName')
-                  <small class="invalid-feedback" role="alert">
-                      <strong>{{ $message }}</strong>
-                  </small>
-                  @enderror
+                @error('firstName')
+                <small class="invalid-feedback" role="alert">
+                  <strong>{{ $message }}</strong>
+                </small>
+                @enderror
               </div>
               <div class="form-group  col-sm-6 col-md-12 col-lg-6">
                 <label for="input2Name">Apellido</label>
 
                 <input type="text" class="form-control @error('lastName') is-invalid @enderror" id="input2Name" placeholder="Apellido" name="lastName" value="{{ old('lastName') }}">
 
-                  @error('lastName')
-                  <small class="invalid-feedback" role="alert">
-                      <strong>{{ $message }}</strong>
-                  </small>
-                  @enderror
+                @error('lastName')
+                <small class="invalid-feedback" role="alert">
+                  <strong>{{ $message }}</strong>
+                </small>
+                @enderror
               </div>
               <div class="form-group col-sm-6 col-md-12 col-lg-12">
                 <label for="inputEmail4">Email</label>
 
                 <input type="email" class="form-control @error('email') is-invalid @enderror" id="inputEmail4" placeholder="nombre@ejemplo.com" name="email" value="{{ old('email') }}">
 
-                  @error('email')
-                  <small class="invalid-feedback" role="alert">
-                      <strong>{{ $message }}</strong>
-                  </small>
-                  @enderror
+                @error('email')
+                <small class="invalid-feedback" role="alert">
+                  <strong>{{ $message }}</strong>
+                </small>
+                @enderror
               </div>
               <div class="form-group  col-sm-6 col-md-12 col-lg-6">
                 <label for="inputPassword4">Contraseña</label>
                 <input type="password" class="form-control @error('password') is-invalid @enderror" id="inputPassword4" placeholder="Contraseña" name="password">
-                  @error('password')
-                  <small class="invalid-feedback" role="alert">
-                      <strong>{{ $message }}</strong>
-                  </small>
-                  @enderror
+                @error('password')
+                <small class="invalid-feedback" role="alert">
+                  <strong>{{ $message }}</strong>
+                </small>
+                @enderror
               </div>
               <div class="form-group  col-sm-6 col-md-12 col-lg-6">
                 <label for="inputPassword42">Confirmar contraseña </label>
