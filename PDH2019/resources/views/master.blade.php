@@ -41,11 +41,7 @@
           <li class="nav-item">
             <a class="nav-link" href="#">Contacto</a>
           </li>
-
-          <li class="nav-item d-sm-block d-lg-none">
-            <a class="dropdown-item nav-link" href="{{ route('logout') }}">Cerrar sesión</a>
-          </li>
-
+          @guest
 
 
           <li class="nav-item d-sm-block d-lg-none">
@@ -54,6 +50,11 @@
           <li class="nav-item d-sm-block d-lg-none">
             <a class="dropdown-item nav-link" data-toggle="modal" data-target="#exampleModalCenter2" href="#">Registrarme</a>
           </li>
+          @else
+          <li class="nav-item d-sm-block d-lg-none">
+            <a class="dropdown-item nav-link" href="{{ route('logout') }}">Cerrar sesión</a>
+          </li>
+          @endguest
 
           <li class="nav-item d-sm-block d-md-none d-lg-none">
             <a class="dropdown-item nav-link" href="#">Carrito</a>
@@ -69,6 +70,7 @@
         <div class="btn-group text-decoration-none imagenesnav">
           <button id="btnGroupDrop1" type="button" class="btn btn-link text-decoration-none botonuser" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <i class="far fa-user-circle iconouser"></i>
+          </button>
             <div class="dropdown-menu dropdown-menu-lg-right" aria-labelledby="btnGroupDrop1">
               @guest
               <a class="dropdown-item" data-toggle="modal" data-target="#exampleModalCenter" href="#">Iniciar sesión</a>
@@ -95,7 +97,8 @@
     <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <form class="container shadow-lg p-3 mb-5 bg-white rounded" name="login" action="" method="post" enctype="multipart/form-data">
+          <form class="container shadow-lg p-3 mb-5 bg-white rounded" name="login" action="/login" method="post" enctype="multipart/form-data">
+            @csrf
             <div class="form-group">
               <label for="exampleInputEmail1">Email</label>
               <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp" placeholder="nombre@ejemplo.com" name="email">
@@ -125,59 +128,57 @@
     <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <form class="container shadow-lg p-3 mb-5 bg-white rounded" action="" method="post" enctype="multipart/form-data" name="registro">
+          <form class="container shadow-lg p-3 mb-5 bg-white rounded" action="{{ route('register') }}" method="post" enctype="multipart/form-data" name="registro">
+            @csrf
             <div class="form-row ">
               <div class="form-group  col-sm-6 col-md-12 col-lg-6 ">
                 <label for="inputName">Nombre</label>
-                <input type="text" class="form-control" id="inputName" placeholder="Nombre" name="nombre" value="">
-                <input type="text" class="form-control" id="inputName" placeholder="Nombre" name="nombre" value="">
-                <small id="emailHelp" class="form-text text-danger">
-
-                </small>
+                <input type="text" class="form-control @error('firstName') is-invalid @enderror" id="inputName" placeholder="Nombre" name="firstName" value="{{ old('firstName') }}">
+                  @error('firstName')
+                  <small class="invalid-feedback" role="alert">
+                      <strong>{{ $message }}</strong>
+                  </small>
+                  @enderror
               </div>
               <div class="form-group  col-sm-6 col-md-12 col-lg-6">
                 <label for="input2Name">Apellido</label>
 
-                <input type="text" class="form-control" id="input2Name" placeholder="Apellido" name="apellido" value="">
+                <input type="text" class="form-control @error('lastName') is-invalid @enderror" id="input2Name" placeholder="Apellido" name="lastName" value="{{ old('lastName') }}">
 
-                <input type="text" class="form-control" id="input2Name" placeholder="Apellido" name="apellido">
-
-                <small id="emailHelp" class="form-text text-danger">
-
-                </small>
+                  @error('lastName')
+                  <small class="invalid-feedback" role="alert">
+                      <strong>{{ $message }}</strong>
+                  </small>
+                  @enderror
               </div>
               <div class="form-group col-sm-6 col-md-12 col-lg-12">
                 <label for="inputEmail4">Email</label>
 
-                <input type="email" class="form-control" id="inputEmail4" placeholder="nombre@ejemplo.com" name="email">
+                <input type="email" class="form-control @error('email') is-invalid @enderror" id="inputEmail4" placeholder="nombre@ejemplo.com" name="email" value="{{ old('email') }}">
 
-                <input type="email" class="form-control" id="inputEmail4" placeholder="nombre@ejemplo.com" name="email">
-
-                <small id="emailHelp" class="form-text text-danger">
-
-                </small>
+                  @error('email')
+                  <small class="invalid-feedback" role="alert">
+                      <strong>{{ $message }}</strong>
+                  </small>
+                  @enderror
               </div>
               <div class="form-group  col-sm-6 col-md-12 col-lg-6">
                 <label for="inputPassword4">Contraseña</label>
-                <input type="password" class="form-control" id="inputPassword4" placeholder="Contraseña" name="password">
-                <small id="emailHelp" class="form-text text-danger">
-
-                </small>
+                <input type="password" class="form-control @error('password') is-invalid @enderror" id="inputPassword4" placeholder="Contraseña" name="password">
+                  @error('password')
+                  <small class="invalid-feedback" role="alert">
+                      <strong>{{ $message }}</strong>
+                  </small>
+                  @enderror
               </div>
               <div class="form-group  col-sm-6 col-md-12 col-lg-6">
                 <label for="inputPassword42">Confirmar contraseña </label>
-                <input type="password" class="form-control" id="inputPassword42" placeholder="Confirmar contraseña" name="retypePassword">
+                <input type="password" class="form-control" id="inputPassword42" placeholder="Confirmar contraseña" name="password_confirmation">
                 <small id="emailHelp" class="form-text text-danger">
 
                 </small>
               </div>
-              <div class="form-group">
-                <label for="avatar">Imagen de perfil</label>
-                <input name="avatar" type="file" id="avatar" class="form-control-file">
-                <small id="emailHelp" class="form-text text-danger">
 
-                </small>
-              </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Salir</button>
                 <button type="submit" class="btn btn-primary">Registrarme</button>

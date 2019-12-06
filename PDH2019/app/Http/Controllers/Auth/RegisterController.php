@@ -28,7 +28,7 @@ class RegisterController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/home';
+    protected $redirectTo = '/';
 
     /**
      * Create a new controller instance.
@@ -52,13 +52,26 @@ class RegisterController extends Controller
             $data,
             [
                 'firstName' => ['required', 'string', 'max:255'],
-                
                 'lastName' => ['required', 'string', 'max:255'],
                 'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
                 'password' => ['required', 'string', 'min:8', 'confirmed'],
             ],
             [
-                'required' => 'Este campo es requerido',
+                'firstName.required' => 'Por favor ingrese su nombre',
+                'firstName.string' => 'El nombre debe ser una cadena de texto.',
+                'firstName.max' => 'Se ha excedido el maximo de caracteres permitidos',
+                'lastName.required' => 'Por favor ingrese su apellido',
+                'lastName.string' => 'El apellido debe ser una cadena de texto.',
+                'lastName.max' => 'Se ha excedido el maximo de caracteres permitidos',
+                'email.required' => 'Por favor ingrese su e-mail.',
+                'email.string' => 'El email debe ser una cadena de texto.',
+                'email.email' => 'Por favor ingrese un e-mail valido.',
+                'email.max' => 'Se ha excedido el maximo de caracteres permitidos',
+                'email.unique' => 'El e-mail ya se encuentra registrado',
+                'password.required' => 'Por favor ingrese una contraseña.',
+                'password.string' => 'La contraseña debe ser una cadena de texto.',
+                'password.min' => 'La contraseña debe tener un minimo de 8 caracteres.',
+                'password.confirmed' => 'Las contraseñas no coinciden.'
             ]
         );
     }
