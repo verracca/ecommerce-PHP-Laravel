@@ -8,7 +8,7 @@ use App\Category;
 use App\User;
 
 $factory->define(Product::class, function (Faker $faker) {
-    $path = storage_path('app/public/product');
+    $path = storage_path('app\public\product');
     return [
       'name' => $faker->sentence(6),
       'description' => $faker->paragraph(4),

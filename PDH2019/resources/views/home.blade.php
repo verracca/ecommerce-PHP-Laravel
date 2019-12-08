@@ -32,12 +32,12 @@
       {{-- @foreach ($categories as $category)
         <a href="/categories/microondas"><img src="img/Categoria amarillo-05.png" alt="Microondas" class="categoriasimg"></a>
       @endforeach --}}
-        <a href="/categories/1"><img src="img/Categoria amarillo-05.png" alt="Microondas" class="categoriasimg"></a>
-        <a href="/categories/2"><img src="img/Categoria amarillo-06.png" alt="Lavarropas" class="categoriasimg"></a>
-        <a href="/categories/3"><img src="img/Categoria amarillo-07.png" alt="Procesadoras" class="categoriasimg"></a>
-        <a href="/categories/4"><img src="img/Categoria amarillo-08.png" alt="Cafeteras" class="categoriasimg"></a>
-        <a href="/categories/5"><img src="img/Categoria amarillo-09.png" alt="Aspiradoras" class="categoriasimg"></a>
-        <a href="/categories/6"><img src="img/Categoria amarillo-10.png" alt="Licuadoras" class="categoriasimg"></a>
+        <a href="/categorias/1"><img src="img/Categoria amarillo-05.png" alt="Microondas" class="categoriasimg"></a>
+        <a href="/categorias/2"><img src="img/Categoria amarillo-06.png" alt="Lavarropas" class="categoriasimg"></a>
+        <a href="/categorias/3"><img src="img/Categoria amarillo-07.png" alt="Procesadoras" class="categoriasimg"></a>
+        <a href="/categorias/4"><img src="img/Categoria amarillo-08.png" alt="Cafeteras" class="categoriasimg"></a>
+        <a href="/categorias/5"><img src="img/Categoria amarillo-09.png" alt="Aspiradoras" class="categoriasimg"></a>
+        <a href="/categorias/6"><img src="img/Categoria amarillo-10.png" alt="Licuadoras" class="categoriasimg"></a>
 
     </div>
 
