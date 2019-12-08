@@ -27,3 +27,5 @@ Route::get('/producto/{id}', 'ProductController@show')->name('producto');
 Route::get('/cart', 'CategoryController@index')->name('cart');
 
 Route::get('/contact', 'CategoryController@index')->name('contact');
+
+Route::get('/buscador', 'ProductController@search')->name('buscador');

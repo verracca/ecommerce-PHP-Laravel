@@ -17,6 +17,13 @@ class ProductController extends Controller
         return view('product');
     }
 
+    public function search()
+    {
+        $termino = $_GET['termino'];
+        $products = Product::where('name', 'like', '%' . $termino . '%')->get();
+        return view('categories', compact('products'));
+    }
+
     /**
      * Show the form for creating a new resource.
      *
@@ -46,8 +53,8 @@ class ProductController extends Controller
      */
     public function show($id)
     {
-      $product=Product::find($id);
-      return view('product', compact('product'));
+        $product = Product::find($id);
+        return view('product', compact('product'));
     }
 
     /**

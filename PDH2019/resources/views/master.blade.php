@@ -61,8 +61,8 @@
           </li>
         </ul>
       </div>
-      <form class="form-inline my-2 my-lg-0 font-weight-bold d-none d-lg-block buscador">
-        <input class="form-control mr-sm-2" type="search" placeholder="Buscar productos" aria-label="Search">
+      <form action="/buscador" class="form-inline my-2 my-lg-0 font-weight-bold d-none d-lg-block buscador">
+        <input class="form-control mr-sm-2" name="termino" type="search" placeholder="Buscar productos" aria-label="Search">
         <button class="btn btn-sm btn-light my-2 my-sm-0 " type="submit">Buscar</button>
       </form>
       <div class="img d-none d-md-block">
