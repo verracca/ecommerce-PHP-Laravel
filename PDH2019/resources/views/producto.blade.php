@@ -25,7 +25,7 @@
             <span class="sr-only">Next</span>
         </a>
     </div> --}}
-      <img src="/storage/product/{{$product->featuredimg}}" class="" alt="">
+      <img class="imgProducto" src="/storage/product/{{$product->featuredimg}}" class="" alt="">
     <section class="d-felx producto">
         <h2>{{$product->name}}</h2>
         <h1 class="precioproducto"> ${{$product->price}}</h1>
