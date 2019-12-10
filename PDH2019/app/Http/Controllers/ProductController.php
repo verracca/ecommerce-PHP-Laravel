@@ -14,14 +14,14 @@ class ProductController extends Controller
      */
     public function index()
     {
-        return view('product');
+        return view('producto');
     }
 
     public function search()
     {
         $termino = $_GET['termino'];
         $products = Product::where('name', 'like', '%' . $termino . '%')->get();
-        return view('categories', compact('products'));
+        return view('categorias', compact('products'));
     }
 
     /**
@@ -54,7 +54,7 @@ class ProductController extends Controller
     public function show($id)
     {
         $product = Product::find($id);
-        return view('product', compact('product'));
+        return view('producto', compact('product'));
     }
 
     /**

@@ -16,7 +16,7 @@ class CategoryController extends Controller
     public function index()
     {
         $products = Product::all();
-        return view('categories',compact('products'));
+        return view('categorias',compact('products'));
     }
 
     /**
@@ -50,7 +50,7 @@ class CategoryController extends Controller
     {
         $products = Product::where('category_id', $id)->get();
 
-        return view('categories', compact('products'));
+        return view('categorias', compact('products'));
     }
 
     /**

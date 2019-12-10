@@ -3,7 +3,7 @@
 
 @section('content')
 
-<section class="d-flex">
+<section class="d-flex productoentero">
     {{-- <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
         <div class="carouselProducto">
             <div class="carousel-item active">
@@ -28,9 +28,17 @@
       <img src="/storage/product/{{$product->featuredimg}}" class="" alt="">
     <section class="d-felx producto">
         <h2>{{$product->name}}</h2>
-        <h1> {{$product->price}}</h1>
+        <h1 class="precioproducto"> ${{$product->price}}</h1>
+        <section class="row nuñez">
+        <i class="fas fa-truck"></i>
+          <p class="ubicacion">Envios a todo el pais</p>
+        </section>
+        <section class="row nuñez">
+          <i class="fas fa-location-arrow"></i>
+          <p class="ubicacion">Nuñez, C.A.B.A.</p>
+        </section>
         <br>
-        <div class="container">
+        <div class="container productosolo">
             <section class="row ">
                 <select class="custom-select col-xl-4" id="inlineFormCustomSelectPref">
                     <option value="0">Cantidad</option>
@@ -42,12 +50,14 @@
                     <option value="6">6</option>
                     <option value="7">7</option>
                 </select>
-                <button type="button" class=" btn btn-primary col-xl-4">Agregar al carrito</button>
+                <button type="button" class=" btn btn-primary col-xl-4 botoncarrito">Agregar al carrito  <i class="fas fa-shopping-cart"></i></button>
             </section>
         </div>
         <br>
         <br>
         <p>{{$product->description}}</p>
+        <br>
+        <br>
     </section>
 </section>
 

@@ -27,7 +27,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <a class="navbar-brand font-weight-normal text-white" href="/">
+      <a class="navbar-brand font-weight-normal text-white textologo" href="/">
         <img class="logo" src="/img/logo.png" alt="logo">Service Nuñez</a>
 
       <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
