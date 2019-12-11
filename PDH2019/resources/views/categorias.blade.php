@@ -4,7 +4,7 @@
   <h1>{{$category->name}}</h1>
   @forelse ($products as $product)
     <article class="">
-       <div class="card mb-1 articulos" style="max-width: 1000px;">
+       <div class="card mb-1 articulos" style="width: 85%;">
   <div class="row no-gutters">
     <div class="col-md-4">
       <img src="/storage/product/{{$product->featuredimg}}" class="card-img" alt="...">
