@@ -19,7 +19,11 @@ a {
 }
 body{
   background-color: #e6e6e6;
+
+body {
+    background-color: #e6e6e6;
 }
+
 /*nav*/
 .avatar {
     width: 30px;
@@ -37,11 +41,13 @@ body{
     width: 40px;
     height: 40px;
 }
-.textologo{
-      font-family: 'Alata', sans-serif;
+
+.textologo {
+    font-family: 'Alata', sans-serif;
 }
-.navbar-collapse{
-  font-family: 'Didact Gothic', sans-serif;
+
+.navbar-collapse {
+    font-family: 'Didact Gothic', sans-serif;
 }
 
 .buscador {
@@ -87,6 +93,13 @@ body{
     padding-top: 30px;
 
 }
+
+.card-img {
+    margin: 25px;
+    width: 250px;
+    height: 250px;
+}
+
 
 .linkscategorias a {
     width: 45%;
@@ -177,37 +190,46 @@ footer {
       display: flex;
       justify-content: center;
     } */
-.card-title{
-  font-weight: bold;
+.card-title {
+    font-weight: bold;
 }
+
 .productosolo {
-  font-family: 'Hind', sans-serif;
+    font-family: 'Hind', sans-serif;
 }
-.botoncarrito{
-  margin-left: 60px;
+
+.botoncarrito {
+    margin-left: 60px;
 }
-.productoentero{
-  margin: 30px;
-  background-color: #fff;
-  box-shadow: 2px 2px 10px #666;
+
+.productoentero {
+    margin: 30px;
+    background-color: #fff;
+    box-shadow: 2px 2px 10px #666;
 }
-.ubicacion{
-  margin-left: 10px;
+
+.ubicacion {
+    margin-left: 10px;
 }
-.fa-location-arrow{
-  margin-top: 7px;
-    margin-left: 15px;
-}
-.fa-truck{
+
+.fa-location-arrow {
     margin-top: 7px;
     margin-left: 15px;
 }
-.precioproducto{
-  margin-bottom: 15px;
+
+.fa-truck {
+    margin-top: 7px;
+    margin-left: 15px;
 }
+
+.precioproducto {
+    margin-bottom: 15px;
+}
+
 .mapacontacto{
   margin-left: 26%;
 }
+
 /*TERMINA FOOTER */
 
 @media (min-width: 768px) {
@@ -228,4 +250,10 @@ section .producto {
 div .carouselProducto {
     margin-left: 100px;
     margin-top: 50px;
+}
+
+.imgProducto {
+    margin: 25px;
+    width: 90%;
+    height: 90%;
 }
