@@ -24,8 +24,10 @@ Route::get('/categorias/{id}', 'CategoryController@show');
 
 Route::get('/producto/{id}', 'ProductController@show')->name('producto');
 
-Route::get('/carrito', 'CartController@index')->name('carrito');
+Route::get('/carrito', 'CartController@index')->middleware('auth');
 
 Route::get('/contacto', 'ContactController@index')->name('contacto');
 
 Route::get('/buscador', 'ProductController@search')->name('buscador');
+
+Route::post('/addtocart', 'CartController@store')->middleware('auth');
