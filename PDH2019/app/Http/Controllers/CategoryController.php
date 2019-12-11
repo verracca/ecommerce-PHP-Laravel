@@ -49,8 +49,10 @@ class CategoryController extends Controller
     public function show($id)
     {
         $products = Product::where('category_id', $id)->get();
+        $category = Category::find($id);
+        // dd(compact('category'));
 
-        return view('categorias', compact('products'));
+        return view('categorias', compact('products', 'category'));
     }
 
     /**

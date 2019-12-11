@@ -86,7 +86,7 @@
         </div>
       </div>
       <span class="img">
-        <a href="" class="text-decoration-none d-block d-lg-none"><img src="img/busqueda.png" alt="Busqueda"></a>
+        {{-- <a href="" class="text-decoration-none d-block d-lg-none"><img src="img/busqueda.png" alt="Busqueda"></a> --}}
       </span>
     </nav>
   </header>
