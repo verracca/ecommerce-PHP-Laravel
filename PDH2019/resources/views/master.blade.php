@@ -36,10 +36,21 @@
             <a class="nav-link" href="/">Inicio <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/categorias">Categorias</a>
+            <div class="dropdown dropcategorias">
+               <a class="" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Categorias</a>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <h4class="dropdown-item" href="#">  Respuestos de:</h4>
+               <a class="dropdown-item" href="#">Aspiradora</a>
+               <a class="dropdown-item" href="#">Microonda</a>
+               <a class="dropdown-item" href="#">Licuadora</a>
+               <a class="dropdown-item" href="#">Procesadora</a>
+               <a class="dropdown-item" href="#">Lavarropa</a>
+               <a class="dropdown-item" href="#">Cafetera</a>
+             </div>
+            </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contacto</a>
+            <a class="nav-link" href="/contacto">Contacto</a>
           </li>
           @guest
 

@@ -24,8 +24,8 @@ Route::get('/categorias/{id}', 'CategoryController@show');
 
 Route::get('/producto/{id}', 'ProductController@show')->name('producto');
 
-Route::get('/cart', 'CategoryController@index')->name('cart');
+Route::get('/carrito', 'CartController@index')->name('carrito');
 
-Route::get('/contact', 'CategoryController@index')->name('contact');
+Route::get('/contacto', 'ContactController@index')->name('contacto');
 
 Route::get('/buscador', 'ProductController@search')->name('buscador');
