@@ -161,10 +161,12 @@ footer {
     content: " | ";
     margin-left: 5px;
 }
-
+.dropcategorias{
+  margin-top: 8px;
+}
 .articulos{
   margin-top: 10px;
-  margin-left: 140px;
+  margin-left: 8%;
   font-family: 'Roboto', sans-serif;
   box-shadow: 2px 2px 5px #666;
 }
@@ -196,6 +198,17 @@ footer {
 .precioproducto{
   margin-bottom: 15px;
 }
+.mapacontacto {
+  margin-left: 21%;
+}
+.respuestos {
+  margin-left: 12px;
+}
+.dropcategorias{
+  /* background-color: #DC3545; */
+  font-family: 'Didact Gothic', sans-serif;
+}
+
 /*TERMINA FOOTER */
 
 @media (min-width: 768px) {
@@ -216,4 +229,7 @@ section .producto {
 div .carouselProducto {
     margin-left: 100px;
     margin-top: 50px;
+}
+.imgProducto {
+
 }

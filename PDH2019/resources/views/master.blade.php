@@ -38,14 +38,14 @@
           <li class="nav-item">
             <div class="dropdown dropcategorias">
                <a class="" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Categorias</a>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-              <h4class="dropdown-item" href="#">  Respuestos de:</h4>
-               <a class="dropdown-item" href="#">Aspiradora</a>
-               <a class="dropdown-item" href="#">Microonda</a>
-               <a class="dropdown-item" href="#">Licuadora</a>
-               <a class="dropdown-item" href="#">Procesadora</a>
-               <a class="dropdown-item" href="#">Lavarropa</a>
-               <a class="dropdown-item" href="#">Cafetera</a>
+            <div class="dropdown-menu dropcategorias" aria-labelledby="dropdownMenuLink">
+              <h5 class="dropdown-item respuestos" href="#">  Respuestos de:</h5>
+               <a class="dropdown-item" href="/categorias/5">Aspiradora</a>
+               <a class="dropdown-item" href="/categorias/1">Microondas</a>
+               <a class="dropdown-item" href="/categorias/6">Licuadoras</a>
+               <a class="dropdown-item" href="/categorias/3">Procesadora</a>
+               <a class="dropdown-item" href="/categorias/2">Lavarropas</a>
+               <a class="dropdown-item" href="/categorias/4">Cafetera</a>
              </div>
             </div>
           </li>
