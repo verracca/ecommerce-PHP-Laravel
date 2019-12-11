@@ -1,6 +1,7 @@
 @extends('master')
 
 @section('content')
+  <h1>{{$category->name}}</h1>
   @forelse ($products as $product)
     <article class="">
        <div class="card mb-1 articulos" style="width: 85%;">
