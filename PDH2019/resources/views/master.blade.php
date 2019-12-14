@@ -68,7 +68,7 @@
           @endguest
 
           <li class="nav-item d-sm-block d-md-none d-lg-none">
-            <a class="dropdown-item nav-link" href="#">Carrito</a>
+            <a class="dropdown-item nav-link" href="/carrito">Carrito</a>
           </li>
         </ul>
       </div>
@@ -77,7 +77,7 @@
         <button class="btn btn-sm btn-light my-2 my-sm-0 " type="submit">Buscar</button>
       </form>
       <div class="img d-none d-md-block">
-        <a href="" class="text-decoration-none imagenesnav"><i class="fas fa-shopping-cart carrito"></i></a>
+        <a href="/carrito" class="text-decoration-none imagenesnav"><i class="fas fa-shopping-cart carrito"></i></a>
         <div class="btn-group text-decoration-none imagenesnav">
           <button id="btnGroupDrop1" type="button" class="btn btn-link text-decoration-none botonuser" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <i class="far fa-user-circle iconouser"></i>
