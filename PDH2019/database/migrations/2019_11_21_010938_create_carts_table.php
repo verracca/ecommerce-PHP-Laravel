@@ -21,8 +21,8 @@ class CreateCartsTable extends Migration
             $table->decimal('price', 8, 2);
             $table->decimal('subtotal', 8, 2);
             $table->bigInteger('user_id');
-            $table->smallInteger('status');//0 Carrito abierto, 1 cerrado
-            $table->bigInteger('order_number');
+            $table->smallInteger('status')->default(0);//0 Carrito abierto, 1 cerrado
+            $table->bigInteger('order_number')->nullable();
             $table->timestamps();
         });
     }

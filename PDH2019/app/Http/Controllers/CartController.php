@@ -45,14 +45,14 @@ class CartController extends Controller
 
         $item->name = $product->name;
         $item->featuredimg = $product->featuredimg;
-        $item->quantity = 1;
+        $item->quantity = $request->quantity;
         $item->subtotal = $product->price * $item->quantity;
         $item->price = $product->price;
         $item->user_id = Auth::user()->id;
 
         $item->save();
 
-        return redirect("/");
+        return redirect("/carrito");
     }
 
     /**
@@ -95,8 +95,11 @@ class CartController extends Controller
      * @param  \App\Cart  $cart
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Cart $cart)
+    public function destroy($id)
     {
-        //
+      $item = Cart::find($id);
+      $item->delete();
+
+      return redirect("/carrito");
     }
 }

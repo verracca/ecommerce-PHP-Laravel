@@ -37,7 +37,7 @@
           </li>
           <li class="nav-item">
             <div class="dropdown dropcategorias">
-               <a class="" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Categorias</a>
+               <a class="categoriastexto" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Categorias</a>
             <div class="dropdown-menu dropcategorias" aria-labelledby="dropdownMenuLink">
               <h5 class="dropdown-item respuestos" href="#">  Respuestos de:</h5>
                <a class="dropdown-item" href="/categorias/5">Aspiradora</a>

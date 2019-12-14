@@ -31,3 +31,5 @@ Route::get('/contacto', 'ContactController@index')->name('contacto');
 Route::get('/buscador', 'ProductController@search')->name('buscador');
 
 Route::post('/addtocart', 'CartController@store')->middleware('auth');
+
+Route::post('/deletecart', 'CartController@destroy')->middleware('auth');

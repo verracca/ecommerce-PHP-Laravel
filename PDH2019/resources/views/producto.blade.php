@@ -39,18 +39,14 @@
         </section>
         <br>
         <div class="container productosolo">
-            <section class="row ">
-                <select class="custom-select col-xl-4" id="inlineFormCustomSelectPref">
-                    <option value="0">Cantidad</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                </select>
-                <button type="button" class=" btn btn-primary col-xl-4 botoncarrito">Agregar al carrito  <i class="fas fa-shopping-cart"></i></button>
+            <section class=" ">
+                <form class="" action="/addtocart" method="post">
+          @csrf
+          <input type="number" class="col-xl-6 row" name="quantity" value="">
+          <input  type="hidden" name="id" value="{{$product->id}}">
+          <button type="submit" class=" btn btn-primary col-xl-6 botoncarrito row">Agregar al carrito<i class="fas fa-shopping-cart"></i></a>
+        </form>
+
             </section>
         </div>
         <br>
