@@ -18,6 +18,7 @@ class CartController extends Controller
     public function index()
     {
         $items = Cart::where("user_id", Auth::user()->id)->where("status", 0)->get();
+        // dd($items);
 
         return view('carrito', compact('items'));
     }
@@ -95,9 +96,10 @@ class CartController extends Controller
      * @param  \App\Cart  $cart
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Request $req)
     {
-      $item = Cart::find($id);
+      // dd($req->id);
+      $item = Cart::find($req->id);
       $item->delete();
 
       return redirect("/carrito");
