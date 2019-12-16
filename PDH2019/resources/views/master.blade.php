@@ -11,8 +11,6 @@
   <script src="https://kit.fontawesome.com/a340b68414.js" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css?family=Liu+Jian+Mao+Cao&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
-
-
   <link rel="stylesheet" href="/css/styles.css">
   <title>Service Nuñez</title>
   <link rel="SHORTCUT ICON" href="/img/logomini.jpg" type="image/x-icon">
@@ -200,7 +198,12 @@
       </div>
     </div>
   </div>
-
+  {{-- <script type="text/javascript">
+    @if (count($errors) > 0)
+    $('exampleModalCenter2').modal('open');
+    console.log("Hola como va");
+    @endif
+  </script> --}}
   <!-- FinNavegador -->
 
   @yield('content');
