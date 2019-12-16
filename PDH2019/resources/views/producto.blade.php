@@ -3,7 +3,7 @@
 
 @section('content')
 
-<section class="d-flex productoentero">
+<section class="container productoentero">
     {{-- <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
         <div class="carouselProducto">
             <div class="carousel-item active">
@@ -25,10 +25,11 @@
             <span class="sr-only">Next</span>
         </a>
     </div> --}}
-      <img class="imgProducto" src="/storage/product/{{$product->featuredimg}}" class="" alt="">
-    <section class="d-felx producto">
+    <section class="row margenesproducto">
+      <img class="imgProducto col" src="/storage/product/{{$product->featuredimg}}" class="" alt="">
+<article class="col responsiveproducto">
         <h2>{{$product->name}}</h2>
-        <h1 class="precioproducto"> ${{$product->price}}</h1>
+        <h1 class="precioproducto "> ${{$product->price}}</h1>
         <section class="row nuñez">
         <i class="fas fa-truck"></i>
           <p class="ubicacion">Envios a todo el pais</p>
@@ -39,12 +40,13 @@
         </section>
         <br>
         <div class="container productosolo">
-            <section class=" ">
+            <section class="d-felx">
                 <form class="" action="/addtocart" method="post">
           @csrf
-          <input type="number" class="col-xl-6 row" name="quantity" value="">
+          <input type="number" class="botoncantidad" name="quantity" value="">
           <input  type="hidden" name="id" value="{{$product->id}}">
-          <button type="submit" class=" btn btn-primary col-xl-6 botoncarrito row">Agregar al carrito<i class="fas fa-shopping-cart"></i></a>
+          <button type="submit" class=" btn btn-primary botoncarrito">Agregar al carrito<i class="fas fa-shopping-cart"></i>
+</button>
         </form>
 
             </section>
@@ -54,6 +56,7 @@
         <p>{{$product->description}}</p>
         <br>
         <br>
+        </article>
     </section>
 </section>
 

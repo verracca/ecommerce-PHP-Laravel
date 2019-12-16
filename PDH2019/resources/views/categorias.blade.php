@@ -12,8 +12,8 @@
 <article class="">
   <div class="card mb-1 articulos" style="width: 85%;">
     <div class="row no-gutters">
-      <div class="col-md-4">
-        <img src="/storage/product/{{$product->featuredimg}}" class="card-img imgProducto" alt="...">
+      <div class="col-md-4 imagencategorias">
+        <img src="/storage/product/{{$product->featuredimg}}" class="card-img" alt="...">
       </div>
       <div class="col-md-8">
         <div class="card-body">

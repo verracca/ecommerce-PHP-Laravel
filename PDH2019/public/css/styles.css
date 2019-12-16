@@ -172,7 +172,7 @@ footer {
   margin-top: 8px;
 }
 .articulos{
-  margin-top: 10px;
+  margin-top: 17px;
   margin-left: 8%;
   font-family: 'Roboto', sans-serif;
   box-shadow: 2px 2px 5px #666;
@@ -180,11 +180,11 @@ footer {
 .productosolo {
   font-family: 'Hind', sans-serif;
 }
-.botoncarrito{
-  margin-left: 45px;
+.botoncantidad{
+  margin-right: 70px;
 }
 .productoentero{
-  margin: 30px;
+width: 100%;
   background-color: #fff;
   box-shadow: 2px 2px 10px #666;
 }
@@ -202,9 +202,7 @@ footer {
 .precioproducto{
   margin-bottom: 15px;
 }
-.mapacontacto {
-  margin-left: 21%;
-}
+
 .respuestos {
   margin-left: 12px;
 }
@@ -233,19 +231,29 @@ background-color: white;
   font-size: 27px;;
 }
 .imgProducto{
-  margin-top:20px;
-  margin-bottom:20px;
-  margin-left: 35px;
-  width: 80%;
+margin: 20px;
+  width: 100%;
 }
 .imagencarrito{
   width: 5%;
 }
-
-@media (max-width: 768px) {
-.imgProducto
+.responsiveproducto{
+margin-top: 30px;
 }
-
+.margenesproducto{
+  margin-top: 20px;
+}
+.card-body{
+  background-color: #fff;
+  padding-bottom: 170px;
+}
+.contactoentero{
+  background-color: #e6e6e6;
+}
+@media (max-width: 768px) {
+.botoncantidad{
+  margin-bottom: 10px;
+}
 /*TERMINA FOOTER */
 
 @media (min-width: 768px) {
