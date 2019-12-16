@@ -16,11 +16,15 @@
     <input  type="hidden" name="id" value="{{$item->id}}">
     <button type="submit" class=" btn btn-danger col-xl-10 botoncarrito row">Eliminar</a>
   </form>
-
-        </article>
+</article>
       @empty
 
       @endforelse
+      <form class="" action="/checkout" method="post">
+            @csrf
+        <input  type="hidden" name="id" value="">
+        <button type="submit" name="button">Comprar</button>
+      </form>
 
 
 

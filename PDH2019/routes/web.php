@@ -33,3 +33,7 @@ Route::get('/buscador', 'ProductController@search')->name('buscador');
 Route::post('/addtocart', 'CartController@store')->middleware('auth');
 
 Route::post('/deletecart', 'CartController@destroy')->middleware('auth');
+
+Route::post('/checkout', 'CheckoutController@store')->middleware('auth');
+
+Route::get('/checkout', 'CheckoutController@index')->middleware('auth');
