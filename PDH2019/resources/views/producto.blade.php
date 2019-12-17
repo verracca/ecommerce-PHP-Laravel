@@ -35,6 +35,7 @@
         <p>{{$product->description}}</p>
         <br>
         <br>
+        <button type="button" class="btn btn-secondary botonvolver" name="button"><a href="/categorias/{{$product->category_id}}">Volver</a></button>
         </article>
     </section>
 </section>

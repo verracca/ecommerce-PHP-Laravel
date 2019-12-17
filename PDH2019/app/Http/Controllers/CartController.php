@@ -18,9 +18,13 @@ class CartController extends Controller
     public function index()
     {
         $items = Cart::where("user_id", Auth::user()->id)->where("status", 0)->get();
-        // dd($items);
+        $subtotal = 0;
+        foreach ($items as $item) {
+          $subtotal += $item->subtotal;
+        }
 
-        return view('carrito', compact('items'));
+
+        return view('carrito', compact('items', 'subtotal'));
     }
 
     /**
