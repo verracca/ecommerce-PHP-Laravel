@@ -42,3 +42,6 @@ Route::post('/deletecart', 'CartController@destroy')->middleware('auth');
 
 Route::get('/admin', 'AdminController@index')->middleware('auth', 'admin');
 Route::post('/borrarproducto', 'AdminController@destroy')->middleware('auth', 'admin');
+Route::post('/checkout', 'CheckoutController@store')->middleware('auth');
+
+Route::get('/checkout', 'CheckoutController@index')->middleware('auth');

@@ -250,17 +250,13 @@ margin-top: 30px;
 .contactoentero{
   background-color: #e6e6e6;
 }
-@media (max-width: 768px) {
-.botoncantidad{
-  margin-bottom: 10px;
-}
-/*TERMINA FOOTER */
-
 @media (min-width: 768px) {
-    .linkscategorias a {
+  .botoncantidad{
+    margin-bottom: 10px;
+  }
+  .linkscategorias a {
         width: 28%;
     }
-
 }
 
 /*Productos */
