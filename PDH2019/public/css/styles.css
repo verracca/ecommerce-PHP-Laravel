@@ -257,7 +257,7 @@ margin-top: 30px;
     box-shadow: 2px 2px 10px #666;
 }
 .botoneliminar{
-  margin-right: 10px;;
+  margin-right: 40px;;
   margin-top: 12px;
 }
 .botoncomprar{
@@ -291,7 +291,7 @@ justify-content: center;
 padding: 10px;
 }
 .preciocarrito{
-  margin-left:250px;
+  margin-left:210px;
 }
 @media (min-width: 768px) {
   .botoncantidad{

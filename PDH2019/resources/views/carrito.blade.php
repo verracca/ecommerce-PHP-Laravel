@@ -15,7 +15,7 @@
 <form class="" action="/deletecart" method="post">
   @csrf
   <input  type="hidden" name="id" value="{{$item->id}}">
-  <button type="submit" class="btn btn-danger botoneliminar">Eliminar</a></button>
+  <button type="submit" class="btn btn-danger botoneliminar"><i class="fas fa-trash-alt"></i></a></button>
 </form>
 </div>
     <hr width=1200>
@@ -24,7 +24,7 @@
 
 @endforelse
 <hr width=1200>
-    <li class="totalcarrito"><h5>Total del carrito</h5></li>
+    <li class="totalcarrito"><h5>Total del carrito <i class="fas fa-shopping-cart"></i></h5></li>
 <hr width=1200>
 <p>ACA VA EL TOTAL ETC</p>
 <form class="" action="/checkout" method="post">
