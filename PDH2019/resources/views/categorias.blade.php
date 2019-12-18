@@ -3,6 +3,7 @@
 @section('content')
 
 @if (isset($category))
+<div class="todocategorias">
 
 <h1 class="titulocategoria">{{$category->name}}</h1>
 
@@ -32,6 +33,6 @@
 <p>No hay productos disponibles</p>
 @endforelse
 
-
+</div>
 
 @endsection

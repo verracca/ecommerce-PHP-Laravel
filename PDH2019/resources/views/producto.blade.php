@@ -21,7 +21,7 @@
             <section class="d-felx">
                 <form class="" action="/addtocart" method="post">
           @csrf
-          <input type="number" class="botoncantidad" name="quantity" value="">
+          <input type="number" class="botoncantidad" name="quantity" value="1">
           <input  type="hidden" name="id" value="{{$product->id}}">
           <button type="submit" class=" btn btn-primary botoncarrito">Agregar al carrito<i class="fas fa-shopping-cart"></i>
 </button>
