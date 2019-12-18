@@ -17,7 +17,7 @@
       <br>
       <br>
       <hr width=400>
-    <button class="btn btn-secondary botonvolver" type="button" name="button"><a href="/">Vovler al incio<a/></button>
+    <button class="btn btn-secondary botonvolver" type="button" name="button"><a href="/">Volver al inicio<a/></button>
     </div>
     </div>
   @endforeach
