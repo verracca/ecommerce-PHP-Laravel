@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 use App\Cart;
+use Auth;
 use Illuminate\Http\Request;
 
 class CheckoutController extends Controller
@@ -12,8 +13,9 @@ class CheckoutController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index(){
-
-        return view('compras');
+        $ordenes = Cart::where("user_id", Auth::user()->id)->where("status", 1)->get()->groupBy('order_number');
+        // dd(compact('ordenes'));
+        return view('compras', compact('ordenes'));
 }
     /**
      * Show the form for creating a new resource.
@@ -66,7 +68,19 @@ class CheckoutController extends Controller
      */
     public function update(Request $req)
     {
-      // Cart::where('')
+       $orderNumber = rand(10000,90000);
+       $carrito = Cart::where("user_id", Auth::user()->id)->where("status", 0)->update(['status'=>1, 'order_number' => $orderNumber, 'total' => $req->total]);
+
+      //  // dd($orderNumber);
+      //  foreach ($carrito as $key => $value) {
+      //    $value->status = 1;
+      //    $value->order_number = $orderNumber;
+      //
+      //  }
+      // $carrito ->save();
+
+       return redirect('compras');
+
     }
 
     /**
