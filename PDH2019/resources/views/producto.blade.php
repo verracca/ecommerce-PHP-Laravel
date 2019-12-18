@@ -2,7 +2,6 @@
 
 
 @section('content')
-
 <section class="container productoentero">
     <section class="row margenesproducto">
       <img class="imgProducto col" src="/storage/product/{{$product->featuredimg}}" class="" alt="">
@@ -31,11 +30,8 @@
             </section>
         </div>
         <br>
-        <br>
         <p>{{$product->description}}</p>
-        <br>
-        <br>
-        <button type="button" class="btn btn-secondary botonvolver" name="button"><a href="/categorias/{{$product->category_id}}">Volver</a></button>
+                <button type="button" class="btn btn-secondary botonvolver" name="button"><a href="/categorias/{{$product->category_id}}">Volver</a></button>
         </article>
     </section>
 </section>

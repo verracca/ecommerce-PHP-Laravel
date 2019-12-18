@@ -1,6 +1,7 @@
 @extends('master')
 
 @section('content')
+
   <br>
   <div class="card mb-3 contactoentero" style="max-width: 100%;">
   <div class="row no-gutters">
@@ -12,6 +13,7 @@
         <h2 class="card-title">CONTACTO //</h2>
         <p class="card-text"><i class="fas fa-phone-alt"></i>  Telefono: 4706-0066</p>
         <p class="card-text"><i class="fas fa-at"></i>    E-mail: reparacionescabildo3733@gmail.com</p>
+          <button type="button" class="btn btn-secondary botonvolver" name="button"><a href="/">Volver</a></button>
       </div>
     </div>
   </div>

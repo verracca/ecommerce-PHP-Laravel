@@ -13,7 +13,7 @@ class CheckoutController extends Controller
      */
     public function index(){
 
-        return view('checkout');
+        return view('compras');
 }
     /**
      * Show the form for creating a new resource.
@@ -66,7 +66,7 @@ class CheckoutController extends Controller
      */
     public function update(Request $req)
     {
-      Cart::where('')
+      // Cart::where('')
     }
 
     /**
