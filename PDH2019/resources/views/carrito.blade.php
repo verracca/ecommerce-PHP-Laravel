@@ -29,13 +29,12 @@
 <hr width=1200>
     <li class="totalcarrito"><h4>Total del carrito <i class="fas fa-shopping-cart"></i></h4></li>
 <hr width=1200>
-<h3 class="sumadeltotal">${{$subtotal}}</h3>
+<h3 class="sumadeltotal">${{$total}}</h3>
 <form class="" action="/compras" method="post">
       @csrf
-      {{-- <input type="text" name="Juan" value="Hola">
-  @foreach ($items as $item)
-      <input  type="hidden" name="items" value="{{$item->id}}">
-  @endforeach --}}
+
+      <input  type="hidden" name="total" value="{{$total}}">
+
   <button class="botoncomprar btn btn-warning" type="submit" name="button"><strong>FINALIZAR COMPRA</strong></button>
 </form>
     </div>

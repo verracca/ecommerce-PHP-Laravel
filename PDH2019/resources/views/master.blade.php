@@ -63,13 +63,21 @@
             <a class="dropdown-item nav-link" data-toggle="modal" data-target="#exampleModalCenter" href="#">Iniciar sesión</a>
           </li>
           <li class="nav-item d-sm-block d-lg-none">
-            <a class="dropdown-item nav-link" data-toggle="modal" data-target="#exampleModalCenter2" href="#">Registrarme</a>
+            <a class="dropdown-item nav-link" data-toggle="modal" data-target="#exampleModalCenter2" href="#">Registrarmea</a>
           </li>
+
           @else
           <li class="nav-item d-sm-block d-lg-none">
             <a class="dropdown-item nav-link" href="{{ route('logout') }}">Cerrar sesión</a>
           </li>
           @endguest
+
+          <li class="nav-item d-sm-block d-lg-none">
+          <form action="/buscador" class="form-inline my-2 my-lg-0 font-weight-bold buscador">
+            <input class="form-control mr-sm-2" name="termino" type="search" placeholder="Buscar productos" aria-label="Search">
+            <button class="btn btn-sm btn-light my-2 my-sm-0 " type="submit">Buscar</button>
+          </form>
+          </li>
 
           <li class="nav-item d-sm-block d-md-none d-lg-none">
             <a class="dropdown-item nav-link" href="/carrito">Carrito</a>
@@ -91,6 +99,8 @@
             <a class="dropdown-item" data-toggle="modal" data-target="#exampleModalCenter" href="#">Iniciar sesión</a>
             <a class="dropdown-item" data-toggle="modal" data-target="#exampleModalCenter2" href="#"> Registrarme </a>
             @else
+            {{-- <a class="dropdown-item">Hola {{ Auth::user()->name }}</a> --}}
+            <a class="dropdown-item"  href="/compras">Ir a tus compras</a>
             <form class="dropdown-item" id="logout-form" action="/logout" method="POST">
               @csrf
               <button class="dropdown-item" type="submit">Cerrar sesión</button>
@@ -226,13 +236,13 @@
       <div class="footer">
         <ul>
           <li>
-            <a class="listafooter" href="#">Inicio</a>
+            <a class="listafooter" href="/">Inicio</a>
           </li>
           <li class="">
             <a class="listafooter" href="#">Categorias</a>
           </li>
           <li class="">
-            <a class="listafooter" href="#">Contacto</a>
+            <a class="listafooter" href="/contacto">Contacto</a>
           </li>
         </ul>
 
